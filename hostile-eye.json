@@ -1,0 +1,49 @@
+{
+  "_comment": "hostile-eye.json — the enemy's map of USDTW, hunted read-only. Update per hostile scan.",
+  "scanned_at": "2026-10-12T16:16Z-17:00Z",
+  "our_assets": {
+    "solana_mint": "AFNnpqWGngEe8FUrwcc7kPb2ooXZP9u6dzbfehBnoBT",
+    "tron_twin": "TEXzwNmm6n29QcZVjhZZ6FU7wT53PbXnT8",
+    "tron_pair": "TDhZ1SJADfF8YeU5DkPdVvAsp6wkjgXRqg",
+    "solana_pool": "H69CCCP8rQAW2bVSJYRFhbnzYkqX7Dr21EhsrQpRCMJS"
+  },
+  "impostors": {
+    "method": "GeckoTerminal network-wide pool search 'USDTW' (2 pools total: ours + USDTWINE) + Jupiter token search full dump",
+    "solana": [
+      { "symbol": "USDTWINE", "name": "USDTWINE", "mint": "GPV6VSHTsFejFgJU2WeckvYwR9rkBXjM6T66c6Xdpump", "liquidity_usd": 605, "geckoterminal_liq_usd": 3015, "vol24h_usd": 0, "threat": "name-confusable, dormant, zero GitHub code footprint for its mint", "second_mint": "6NePzGk39GB2xHRskrMMLbFr6hg8Wh5Sm6HnFsBTYKdw (dead, $0 liq)" },
+      { "symbol": "USDTWUM", "name": "unstable trump wall US-Mexico", "mints": ["E5MsYEP2LLW98AiZvbavuk6k89J1J8JpwUR6jBpcpump", "6dSgitRApx6zNafbU3ZwRuszQroDxSiaUsvqbEPwpump"], "liquidity_usd": 0, "vol24h_usd": 0, "threat": "none — dead" },
+      { "symbol": "USDTWO", "name": "Unstable Coin Two", "mint": "3HkaJ9ZyTQvrsemXCCkVNxsnDPbdhnNw9fUHqW7hL93e", "liquidity_usd": 0, "vol24h_usd": 0, "threat": "none — dead" },
+      { "symbol": "USDTWIF", "name": "USDT Wif Hat", "mint": "9KRUdeZGfuRtDaEj6Hb8r2dwSSkm8XFBkfXwBxK72VSP", "liquidity_usd": 0, "vol24h_usd": 0, "threat": "none — dead" },
+      { "symbol": "USDTw", "name": "USDT(wormhole)", "mint": "EzxUwDHkpiKbWA7fRmciZZQYMKsDmy2JDDxtU37YKpvb", "liquidity_usd": 0, "vol24h_usd": 0, "threat": "none — legitimate wormhole naming, dead" },
+      { "symbol": "Ben", "name": "The Usdt Whale / The USDT Whale", "mints": ["BYnfGwd3YyCU6sDG8QtszCJcC8b7CAu8TSQxgveYpump", "F8uaioPFxq4ySSXXtRt8a8WUUnX8njHm97oNb1ebpump", "6eogQtCXNSXQN2YENPR1Quh4Me3U5PTTtvapi9F9pump", "H7ieM2imNkBhVnrQBCm57KbGyGEB3Ag5QofhWwb8pump"], "liquidity_usd_each": [3622, 2741, 2519, 2462], "vol24h_usd": 0, "threat": "low — rides the 'usdt whale' name, but no USDTW symbol and zero volume" }
+    ],
+    "tron": {
+      "exact_name_impostor_pools": 0,
+      "note": "GeckoTerminal shows only our USDTW/WTRX pool on Tron. Tronscan keyword search API is auth-walled (v2 401) — token-level enumeration pending; pool-level truth: no competitors."
+    }
+  },
+  "weaknesses": [
+    { "flag": "Single holder ownership 99.99% (RugCheck: danger, score 9998)", "cure": "client deliveries to distinct self-custody addresses — each delivery dilutes it" },
+    { "flag": "Top 10 holders >70% supply (RugCheck: danger, score 10099)", "cure": "same deliveries — the counter-attack move" },
+    { "flag": "High market cap per holder (RugCheck: warn, score 10000)", "cure": "holder count grows per delivery" },
+    { "flag": "Low liquidity ~$96 Solana (RugCheck) / ~$122 Tron pool", "cure": "deepen with fuel when available (oracle estimateenergy first, feeLimits law); machines defend floors meanwhile — a hostile with ~$200 can walk either pool today" },
+    { "flag": "0 transfers in 24h on Tron; BirEye 24h vol $41", "cure": "client deliveries create real transfers; heartbeat trades count too" },
+    { "flag": "Jupiter shows blank name + 'unknown' tag, no icon", "cure": "their indexer — on-chain Metaplex metadata EXISTS (name 'USDT Whale', symbol USDTW, URI -> our repo); heals with liquidity/volume, nothing to fix on our side" },
+    { "flag": "BirEye logo is a stale cache", "cure": "their cache refreshes on their clock" },
+    { "flag": "X ~3 posts in weeks; website is a one-pager", "cure": "human content moves" },
+    { "flag": "No CoinGecko/CMC page (stranger search returns nothing)", "cure": "human forms — cg-application.json ready; GeckoTerminal pools both live (strongest app evidence)" }
+  ],
+  "bulletproof": [
+    "mint authority REVOKED — verified on-chain 2026-10-12",
+    "freeze authority REVOKED — verified on-chain 2026-10-12",
+    "supply flat 80,000,000 — no more can ever exist",
+    "owner renounced; no admin keys on either contract",
+    "Metaplex metadata real and points to our repo (whale-logo.png)",
+    "we own the LP on both pools — skim and fee pot are ours (criminal-scan verdict)",
+    "verified contracts both chains",
+    "machines defend both pegs: whale-engine (live Jupiter SOL price, $0.99 floor), tron-heartbeat, watchtower",
+    "impostor USDTWINE: zero GitHub code footprint, zero 24h volume — no ranking war active",
+    "TLVAfg 'USDT' clone stays private (law 5) — invisible to enemies"
+  ],
+  "bottom_line": "The contracts are bulletproof; the attack surface is thin pools (fuel-defensible, machines armed) and single-wallet optics. The hostile-eye cure and the business cure are THE SAME MOVE: client deliveries to distinct self-custody addresses."
+}
