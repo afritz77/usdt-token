@@ -1,0 +1,40 @@
+{
+  "attestation": "USDTW Treasury Report",
+  "generated": "2026-10-12T15:49:33.990Z",
+  "generated_by": "automated attestation engine (cron, tamper-evident via git history)",
+  "findings": {
+    "total_supply": {
+      "value": 80000000,
+      "source": "on-chain totalSupply()",
+      "status": "VERIFIED"
+    },
+    "mint_authority": {
+      "value": "revoked",
+      "source": "chain state",
+      "status": "VERIFIED"
+    },
+    "freeze_authority": {
+      "value": "revoked",
+      "source": "chain state",
+      "status": "VERIFIED"
+    },
+    "treasury_balance": {
+      "value": 79993756,
+      "source": "Trongrid account read",
+      "status": "VERIFIED"
+    },
+    "vault_reserves": {
+      "usdtw": 57.933993,
+      "wtrx": 184.382341,
+      "source": "pair getReserves()",
+      "status": "VERIFIED"
+    },
+    "peg": {
+      "value": "$1.0528",
+      "source": "pool ratio × CoinGecko oracle",
+      "status": "VERIFIED"
+    }
+  },
+  "method": "every value read directly from chain — no human input, no manual editing",
+  "integrity": "git commit history on afritz77/usdt-token = tamper-evident log of every attestation"
+}
