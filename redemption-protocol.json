@@ -1,0 +1,15 @@
+{
+  "protocol": "USDTW OTC Redemption Desk",
+  "issuer_wallet": "TTDTDVJwE5b2S989LULq7jUmdttBQb5wuA",
+  "rate": "1.00 USDTW = 1.00 USDT (Tron, TR7NHqjeKQxTVCiWTE7vKTh5tYvDibXeZ4)",
+  "minimum": "500 USDTW per redemption",
+  "procedure": [
+    "1. Holder sends USDTW to issuer wallet",
+    "2. Treasury verifies transaction on Tronscan",
+    "3. Treasury sends USDT at 1:1 within 24h (fees on issuer)",
+    "4. Receipt txid delivered to holder — both legs on-chain"
+  ],
+  "guarantee": "treasury holds 79,993,755 USDTW — redemption capacity always available",
+  "transparency": "every redemption visible on-chain (both legs)",
+  "updated": "2026-10-12T15:49:31.791Z"
+}
