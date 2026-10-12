@@ -2,11 +2,11 @@
   "token": "USDTW",
   "network": "tron",
   "pair_contract": "TDhZ1SJADfF8YeU5DkPdVvAsp6wkjgXRqg",
-  "timestamp": "2026-10-12T22:00:05.174Z",
+  "timestamp": "2026-10-12T23:00:02.645Z",
   "reserves": {
-    "usdtw": 57.321142,
-    "wtrx": 186.418657,
-    "wtrx_usd_value": 61.430726459867
+    "usdtw": 56.405566,
+    "wtrx": 189.453715,
+    "wtrx_usd_value": 62.421778379345
   },
   "price_reference": "CoinGecko TRX/USD",
   "peg_mechanism": "treasury-defended pool ratio",
