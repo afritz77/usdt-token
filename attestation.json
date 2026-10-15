@@ -1,6 +1,6 @@
 {
   "attestation": "USDTW Treasury Report",
-  "generated": "2026-10-15T21:00:06.932Z",
+  "generated": "2026-10-15T22:00:06.482Z",
   "generated_by": "automated attestation engine (cron, tamper-evident via git history)",
   "findings": {
     "total_supply": {
@@ -19,7 +19,7 @@
       "status": "VERIFIED"
     },
     "treasury_balance": {
-      "value": 79899134,
+      "value": 79899109,
       "source": "Trongrid account read",
       "status": "VERIFIED"
     },
