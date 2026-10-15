@@ -1,6 +1,6 @@
 {
   "attestation": "USDTW Treasury Report",
-  "generated": "2026-10-15T19:00:07.602Z",
+  "generated": "2026-10-15T20:00:07.390Z",
   "generated_by": "automated attestation engine (cron, tamper-evident via git history)",
   "findings": {
     "total_supply": {
@@ -30,7 +30,7 @@
       "status": "VERIFIED"
     },
     "peg": {
-      "value": "$1.0028",
+      "value": "$1.0037",
       "source": "pool ratio × CoinGecko oracle",
       "status": "VERIFIED"
     }
