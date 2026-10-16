@@ -1,6 +1,6 @@
 {
   "attestation": "USDTW Treasury Report",
-  "generated": "2026-10-16T05:00:06.711Z",
+  "generated": "2026-10-16T06:00:29.046Z",
   "generated_by": "automated attestation engine (cron, tamper-evident via git history)",
   "findings": {
     "total_supply": {
@@ -24,13 +24,13 @@
       "status": "VERIFIED"
     },
     "vault_reserves": {
-      "usdtw": 143.899434,
-      "wtrx": 434.584736,
+      "usdtw": 144.275153,
+      "wtrx": 433.456384,
       "source": "pair getReserves()",
       "status": "VERIFIED"
     },
     "peg": {
-      "value": "$1.0109",
+      "value": "$1.0043",
       "source": "pool ratio × CoinGecko oracle",
       "status": "VERIFIED"
     }
