@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USDTW — Whitepaper v1.0</title>
+<meta name="description" content="USDT Whale (USDTW) whitepaper — fixed-supply settlement token on Solana and Tron. 80,000,000 per network. No mint. No freeze. No owner.">
+<style>
+  :root { --bg:#050b14; --fg:#dbe9ff; --dim:#6b8bb8; --acc:#2fd4a7; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--fg); font-family:system-ui, sans-serif; display:flex; flex-direction:column; align-items:center; padding:48px 24px; min-height:100vh; }
+  main { max-width:760px; width:100%; line-height:1.7; font-size:15px; }
+  h1 { font-size:32px; margin-top:18px; letter-spacing:-0.5px; }
+  h2 { font-size:19px; margin-top:34px; color:var(--acc); }
+  .ver { color:var(--dim); margin-top:6px; }
+  p { margin-top:12px; color:#b8cce8; }
+  ul { margin:10px 0 0 22px; color:#b8cce8; }
+  li { margin-top:6px; }
+  table { border-collapse:collapse; margin-top:14px; width:100%; font-size:13px; }
+  th, td { border:1px solid #1d3752; padding:8px 10px; text-align:left; word-break:break-all; }
+  th { color:var(--dim); text-transform:uppercase; font-size:11px; letter-spacing:1px; background:#0a1524; }
+  code { color:var(--acc); font-family:ui-monospace, monospace; font-size:13px; }
+  a { color:var(--acc); text-decoration:none; }
+  .back { margin-top:40px; display:inline-block; border:1px solid #1d3752; padding:10px 16px; border-radius:999px; font-size:15px; }
+  .back:hover { border-color:var(--acc); }
+  footer { margin-top:40px; color:#3d5a80; font-size:13px; }
+  hr { border:none; border-top:1px solid #14263d; margin-top:34px; }
+</style>
+</head>
+<body>
+<main>
+<h1>USDT Whale (USDTW) — Whitepaper</h1>
+<p class="ver"><strong>Version 1.0 · October 2026</strong></p>
+
+<h2>Abstract</h2>
+<p>USDT Whale (USDTW) is a fixed-supply settlement token deployed simultaneously on Solana and Tron. 80,000,000 USDTW were minted once on each network — a hard total of 160,000,000 tokens — and no more can ever be created. Mint and freeze authorities are permanently revoked on both chains, verifiable on-chain by any party.</p>
+
+<h2>1. Overview</h2>
+<p>USDTW is designed as a settlement and payment token for cross-chain transfers and peer-to-peer value exchange, operating on two of the lowest-cost networks available:</p>
+<ul>
+<li><strong>Solana</strong> — sub-second finality, fractions of a cent per transfer</li>
+<li><strong>Tron</strong> — near-zero fees for TRC-20 transfers, wide exchange and wallet support</li>
+</ul>
+<p>The same name, symbol, and supply law apply on both chains.</p>
+
+<h2>2. Token Specifications</h2>
+<table>
+<tr><th>Property</th><th>Solana</th><th>Tron (TRC-20)</th></tr>
+<tr><td>Name</td><td>USDT Whale</td><td>USDT Whale</td></tr>
+<tr><td>Symbol</td><td>USDTW</td><td>USDTW</td></tr>
+<tr><td>Decimals</td><td>6</td><td>6</td></tr>
+<tr><td>Total supply</td><td>80,000,000</td><td>80,000,000</td></tr>
+<tr><td>Contract</td><td><code>AFNnpqWGngEe8FUrwcc7kPb2ooXZP9u6dzbfehBnoBT</code></td><td><code>TEXzwNmm6n29QcZVjhZZ6FU7wT53PbXnT8</code></td></tr>
+</table>
+<p>Combined maximum supply across both networks: <strong>160,000,000 USDTW</strong>.</p>
+
+<h2>3. Fixed Supply &amp; Security</h2>
+<ul>
+<li>All tokens were minted in a single issuance at launch (2026-10-07).</li>
+<li>The mint authority is revoked: no additional USDTW can ever be created on either network.</li>
+<li>The freeze authority is revoked: token holders cannot be frozen or confiscated by the issuer. Holders have unconditional control of their balances.</li>
+<li>Both revocations are verifiable on-chain via the explorers listed in Section 6.</li>
+</ul>
+
+<h2>4. Markets &amp; Liquidity</h2>
+<p>USDTW trades on decentralized exchanges on both networks:</p>
+<ul>
+<li><strong>Tron — SunSwap v2 pair (USDTW/WTRX)</strong>, live and settled by market activity near a $1.00 reference price.</li>
+<li><strong>Solana — Raydium CPMM pool (USDTW/SOL)</strong>, providing SOL-side liquidity for the network.</li>
+</ul>
+<p>Current market data is available on DEX screeners and on the project website.</p>
+
+<h2>5. Supply Verification</h2>
+<p>Public, always-on endpoints verify the supply without trusting any party's word:</p>
+<ul>
+<li>Total supply (JSON): <a href="https://afritz77.github.io/usdt-token/total-supply.json">total-supply.json</a></li>
+<li>Circulating supply (text): <a href="https://afritz77.github.io/usdt-token/circulating-supply.txt">circulating-supply.txt</a></li>
+</ul>
+
+<h2>6. Official Links</h2>
+<ul>
+<li>Website: <a href="https://afritz77.github.io/usdt-token/">afritz77.github.io/usdt-token</a></li>
+<li>Solana explorer: <a href="https://solscan.io/token/AFNnpqWGngEe8FUrwcc7kPb2ooXZP9u6dzbfehBnoBT">solscan.io/token/AFNnpq…</a></li>
+<li>Tron explorer: <a href="https://tronscan.io/#/token20/TEXzwNmm6n29QcZVjhZZ6FU7wT53PbXnT8">tronscan.io — USDTW</a></li>
+<li>X / Twitter: <a href="https://x.com/asilimeme">x.com/asilimeme</a></li>
+</ul>
+
+<h2>7. Distribution</h2>
+<p>The majority of supply is retained in project treasuries on each network and is released into circulation through market activity and distribution over time. Circulating supply figures are published at the endpoints in Section 5.</p>
+
+<hr>
+<footer>USDT Whale is a fixed-supply token. Nothing in this document constitutes financial advice or a guarantee of price performance. Supply, authorities, and contract addresses are verifiable on-chain at any time.</footer>
+<p style="margin-top:24px"><a class="back" href="index.html">← Back to USDTW</a></p>
+</main>
+</body>
+</html>
