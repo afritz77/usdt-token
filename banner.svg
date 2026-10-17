@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="383" viewBox="0 0 1920 383">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1d3a"/>
+      <stop offset="100%" stop-color="#061224"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f6d365"/>
+      <stop offset="100%" stop-color="#fda085"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="383" fill="url(#bg)"/>
+  <path d="M0 310 Q 480 250 960 310 T 1920 310" stroke="#1e4d8c" fill="none" stroke-width="3" opacity="0.45"/>
+  <path d="M0 345 Q 480 285 960 345 T 1920 345" stroke="#1e4d8c" fill="none" stroke-width="3" opacity="0.25"/>
+  <image href="https://afritz77.github.io/usdt-token/whale-logo.png" x="110" y="62" width="258" height="258"/>
+  <text x="430" y="165" font-family="Arial, Helvetica, sans-serif" font-size="92" font-weight="bold" fill="#ffffff">USDT Whale</text>
+  <text x="430" y="232" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="bold" fill="url(#gold)">USDTW</text>
+  <text x="430" y="290" font-family="Arial, Helvetica, sans-serif" font-size="32" fill="#8fb3e0">Fixed-supply settlement token · Solana + Tron</text>
+  <text x="1890" y="70" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#cfe0f5">80,000,000 per network</text>
+  <text x="1890" y="112" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#cfe0f5">Minted once · Authorities revoked</text>
+  <text x="1890" y="154" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#cfe0f5">Live on SunSwap &amp; Raydium</text>
+  <text x="430" y="365" font-family="monospace" font-size="19" fill="#5a7db0">Solana AFNnpqWGngEe8FUrwcc7kPb2ooXZP9u6dzbfehBnoBT · Tron TEXzwNmm6n29QcZVjhZZ6FU7wT53PbXnT8</text>
+</svg>
