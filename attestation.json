@@ -1,6 +1,6 @@
 {
   "attestation": "USDTW Treasury Report",
-  "generated": "2026-10-18T13:00:06.528Z",
+  "generated": "2026-10-18T14:00:07.146Z",
   "generated_by": "automated attestation engine (cron, tamper-evident via git history)",
   "findings": {
     "total_supply": {
@@ -19,18 +19,18 @@
       "status": "VERIFIED"
     },
     "treasury_balance": {
-      "value": 79864086,
+      "value": 79865567,
       "source": "Trongrid account read",
       "status": "VERIFIED"
     },
     "vault_reserves": {
-      "usdtw": 108.291339,
-      "wtrx": 326.873888,
+      "usdtw": 57.099528,
+      "wtrx": 629.14497,
       "source": "pair getReserves()",
       "status": "VERIFIED"
     },
     "peg": {
-      "value": "$1.0049",
+      "value": "$3.6606",
       "source": "pool ratio × CoinGecko oracle",
       "status": "VERIFIED"
     }
