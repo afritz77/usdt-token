@@ -1,0 +1,8 @@
+{
+  "name": "USDT Whale",
+  "symbol": "USDTW",
+  "description": "USDTW (USDT Whale) — fixed-supply settlement token on Solana and Tron. 80,000,000 per network, minted once, no more can ever be created. No mint. No freeze. No owner. Live $1.00 market on Raydium CLMM.",
+  "image": "https://cdn.jsdelivr.net/gh/afritz77/usdt-token@main/whale-logo.png",
+  "external_url": "https://afritz77.github.io/usdt-token/",
+  "twitter": "https://x.com/asilimeme"
+}
